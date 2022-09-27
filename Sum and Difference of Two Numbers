@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    //variable declarations 
+	int m;
+    int n;
+    float one;
+    float two;
+    
+    //read two lines of input
+    scanf("%d %d", &m, &n);
+    scanf("%f %f", &one, &two);
+    
+    //operations
+    int sum = m + n;
+    int diff = m - n;
+    float sum2 = one + two;
+    float diff2 = one - two;
+    
+    //prints
+    printf("%d %d", sum, diff);
+    printf("\n%0.1f %0.1f", sum2, diff2);
+     
+    return 0;
+}
