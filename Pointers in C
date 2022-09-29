@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void update(int *a,int *b) {
+    // Complete this function
+    //first get the value for the sum of a
+    int sum = *a + *b;
+    
+    //then value for the difference of b
+    int diff = *a - *b;
+        
+    //lastly adjust to get absolute values
+    *a = sum;
+    *b = abs(diff);
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d", a, b);
+    
+    return 0;
+}
